@@ -29,12 +29,14 @@ else if (intnumber == 2)
 }
 else
 {
-for (int i = 1; i < intnumber; i++)
+for (int i = 2; i < intnumber; i+=2)
 {
-    if (i % 2 ==0)
-    {
-        Console.WriteLine(i);
-    }
+    // if (i % 2 ==0)
+    // {
+    //     Console.WriteLine(i);
+    // }
+    Console.WriteLine(i);
+
 
 }
 
