@@ -7,23 +7,28 @@
 
 int[] mass = new int[3];
 
+string[] massnumber = new string[3]{"первое","второе","третье"};
+
 string? strnumber;
 
 
 for (int i = 0; i < 3; i++)
 {
-    switch (i)
-    {
-        case 0:
-        Console.WriteLine("Введите первое число: ");
-        break;
-        case 1:
-        Console.WriteLine("Введите второе число: ");
-        break;
-        case 2:
-        Console.WriteLine("Введите третье число: ");
-        break;
-    }
+    // switch (i)
+    // {
+    //     case 0:
+    //     Console.WriteLine("Введите первое число: ");
+    //     break;
+    //     case 1:
+    //     Console.WriteLine("Введите второе число: ");
+    //     break;
+    //     case 2:
+    //     Console.WriteLine("Введите третье число: ");
+    //     break;
+    // }
+
+  Console.WriteLine("Введите " + massnumber[i] + " число: ");
+    
      strnumber = Console.ReadLine();
      mass[i] = Convert.ToInt32(strnumber);
 
@@ -42,7 +47,7 @@ for (int i = 0; i < mass.Length ; i++)
     
 }
 
-Console.WriteLine("Свмое большое число - " + max);
+Console.WriteLine("Самое большое число - " + max);
 
 // // Проверка масива
 // for (int i = 0; i < mass.Length ; i++)
